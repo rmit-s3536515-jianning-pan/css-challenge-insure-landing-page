@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/DM+Serif+Display">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js">
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div> 
+    <div class="container d-flex py-2 nav">
+      <img src="./images/logo.svg" alt="Logo svg" class="nav-logo" />
+      
+      <a href="#" class="burgerbar"><img src="./images/icon-hamburger.svg" alt="burger"></a>
+
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="" class="nav-link">How we work</a></li>
+          <li class="nav-item"><a href="" class="nav-link"> Blog</a></li>
+          <li class="nav-item"><a href="" class="nav-link"> Account</a></li>
+          <li class="nav-item"><a href="" class="nav-link view-btn">View plans</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </div>
+  
+  <header class="header">
+    <section class="container main-header">
+      <div class="header_left">
+        <h1 class="header-title"> Humanizing your insurance.</h1>
+        <p>Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that’s right for you. Ensure you 
+          and your loved ones are protected.</p>
+          <button type="button" class="btn btn-lg btn-outline" style="margin:2rem 0 ">View plans</button>
+      </div>
+      <div class="header_image_container">
+        <img src="./images/image-intro-desktop.jpg" alt="intro" 
+        srcset="./images/image-intro-desktop.jpg 1440w, 
+        ./images/image-intro-mobile.jpg 375w"
+        class="intro-img"
+        >
+      </div>
+    </section>
+  </header>
+ 
+ <main class="main">
+
+  <section class="container">
+    <h1 class="main-title">We’re different</h1>
+
+    <div class="different">
+      <div class="box">
+        <img src="./images/icon-snappy-process.svg" alt="">
+        <h3>Snappy Process</h3>
+        <p>Our application process can be completed in minutes, not hours. Don’t get 
+          stuck filling in tedious forms.</p>
+      </div>
+
+      <div class="box">
+        <img src="./images/icon-affordable-prices.svg" alt="">
+        <h3>Affordable Prices</h3>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.</p>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/icon-people-first.svg" alt="">
+        <h3>People First</h3>
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.</p>
+      </div>
+
+
+    </div>
+
+    <div class="find-more">
+      <h3>Find out more about how we work</h3>
+      <div>
+        <button type="button" class="btn btn-lg btn-outline">How we work</button>
+      </div>
+      
+    </div>
+  </section>
+
+ </main>
+  
+
+ <footer class="footer">
+   <div class="container footer_top">
+     <img src="./images/logo.svg" alt="Logo svg" />
+     <ul>
+       <li><img src="./images/icon-facebook.svg" alt=""></li>
+       <li><img src="./images/icon-pinterest.svg" alt=""></li>
+       <li><img src="./images/icon-twitter.svg" alt=""></li>
+       <li><img src="./images/icon-instagram.svg" alt=""></li>
+     </ul¡>
+   </div>
+
+   <div class="container footer_bottom">
+     <div class="our-company">
+      <h3>Our Company</h3>
+      <ul>
+        <li><a href="">How we work</a></li>
+        <li><a href="">Why Insure?</a></li>
+        <li><a href="">View plans</a></li>
+        <li><a href="">Reviews</a></li>
+      </ul>
+     </div>
+
+     <div class="help-me">
+      <h3>Help me</h3>
+      <ul>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Terms of use</a></li>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Cookies</a></li>
+      </ul>
+     </div>
+
+     <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="">Sales</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Live chat</a></li>
+      </ul>
+     </div>
+
+     <div class="others">
+      <h3>Others</h3>
+      <ul>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Press</a></li>
+        <li><a href="">Licenses</a></li>
+      </ul>
+     </div>
+
+   </div>
+ </footer>
+
+  
+  
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jianning Pan</a>.
+  </div>
+
+  <script>
+    let links = document.querySelector('.navbar');
+    document.querySelector('.burgerbar').addEventListener('click',function(){
+        if (links.style.display === 'block'){
+          links.style.display = 'none';
+        }
+        else {
+          links.style.display = 'block';
+        }
+    })
+  </script>
+</body>
+</html>
